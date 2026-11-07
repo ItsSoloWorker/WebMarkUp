@@ -1,0 +1,567 @@
+/* add all items from grading group 3 and 4. Search for items in group 5 that refer to css f.e. z index */ 
+/* The page is dark: a black page with a white header and footer */
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1rem;
+	line-height: 1.6;
+	letter-spacing: 0.02em;
+	word-spacing: 0.1em;
+}
+
+#accept-cookies,
+#open-menu {
+	display: none;
+}
+
+h1 {
+	margin: 0;
+}
+
+h2 {
+	position: absolute;
+	left: -100rem;
+}
+
+header,
+footer {
+	padding: 0.5rem 1rem;
+	background-color: #ffffff;
+	color: #000000;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	display: block;
+}
+
+.logo img {
+	display: block;
+	height: 2.5rem;
+}
+
+.hamburger {
+	font-size: 2.2rem;
+	line-height: 1;
+	cursor: pointer;
+}
+
+header nav {
+	display: none;
+}
+
+nav > ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem 1rem;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav a,
+nav span {
+	padding: 0.2rem 0.8rem;
+	border-radius: 0.5rem;
+	color: #000000;
+	font-family: "Teko", sans-serif;
+	font-size: 1.3rem;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+nav a.current {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+nav a:hover,
+aside a:hover,
+figure a:hover,
+form > input:hover {
+	background-color: #b30000;
+	color: #ffffff;
+}
+
+nav a:active,
+aside a:active,
+figure a:active,
+form > input:active {
+	background-color: #660000;
+	color: #ffffff;
+}
+
+#mobile-menu {
+	display: none;
+}
+
+#mobile-menu a,
+#mobile-menu span,
+#mobile-menu label {
+	color: #ffffff;
+}
+
+#mobile-menu span,
+#mobile-menu label {
+	font-size: 2rem;
+	line-height: 1;
+}
+
+#mobile-menu label {
+	justify-self: end;
+	cursor: pointer;
+}
+
+#mobile-menu ul {
+	grid-column: 1 / -1;
+}
+
+#mobile-menu .menu-main {
+	flex-direction: column;
+	gap: 1.5rem;
+	margin: 2rem 0;
+}
+
+#mobile-menu .menu-main a {
+	font-size: 2.2rem;
+}
+
+#mobile-menu .menu-extra {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: start;
+	gap: 1.5rem;
+	margin: 0 2rem;
+}
+
+#mobile-menu .menu-extra a {
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+	font-size: 1rem;
+}
+
+#mobile-menu p {
+	grid-column: 1 / -1;
+	margin: 2rem 0 0 0;
+	font-size: 0.7rem;
+}
+
+main {
+	flex-grow: 1;
+	padding: 1rem;
+	background-color: #000000;
+	color: #ffffff;
+}
+
+main > section {
+	margin-bottom: 2rem;
+}
+
+main p {
+	text-indent: 1.5rem;
+}
+
+#hero {
+	position: relative;
+	margin: -1rem -1rem 2rem -1rem;
+}
+
+#hero figure {
+	margin: 0;
+	border-style: none;
+}
+
+#hero aside {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+aside a {
+	display: block;
+	width: auto;
+	padding: 0.4rem 1.5rem;
+	border-radius: 0.5rem;
+	background-color: #e50000;
+	color: #ffffff;
+	font-family: "Teko", sans-serif;
+	font-size: 1.6rem;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+#intro p {
+	font-family: "Teko", sans-serif;
+	font-size: 1.3rem;
+	line-height: 1.3;
+}
+
+article {
+	overflow: hidden;
+}
+
+article p {
+	margin: 0 0 3rem 0;
+	padding: 0 1rem;
+}
+
+article p::first-letter {
+	color: #e50000;
+	font-size: 1.4em;
+}
+
+article figure {
+	display: none;
+}
+
+.mobile-photo {
+	width: 65%;
+	margin: 3rem auto;
+}
+
+figure {
+	position: relative;
+	margin: 0 0 1rem 0;
+	border-width: 0.3rem;
+	border-style: double;
+	border-color: #e50000;
+}
+
+figure img {
+	display: block;
+	width: 100%;
+}
+
+figure.banner {
+	margin: -1rem -1rem 0 -1rem;
+	border-style: none;
+}
+
+figure a {
+	position: absolute;
+	right: 1rem;
+	bottom: 1rem;
+	padding: 0.3rem 1.2rem;
+	border-radius: 0.5rem;
+	background-color: #e50000;
+	color: #ffffff;
+	font-family: "Teko", sans-serif;
+	font-size: 1.6rem;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+figcaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 0.2rem 0.6rem;
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 0.8rem;
+}
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer p {
+	margin: 0;
+	font-size: 0.8rem;
+	text-align: right;
+	text-indent: 0;
+}
+
+footer nav {
+	display: none;
+}
+
+#cookies {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 9999;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #e50000;
+	color: #ffffff;
+}
+
+#cookies p {
+	margin: 0;
+	font-size: 0.9rem;
+}
+
+#cookies label {
+	padding: 0.2rem 1rem;
+	border-radius: 0.5rem;
+	background-color: #ffffff;
+	color: #000000;
+	cursor: pointer;
+}
+
+#accept-cookies:checked ~ #cookies {
+	display: none;
+}
+
+form {
+	display: grid;
+	gap: 1.5rem;
+	width: 85%;
+	margin: 2rem auto;
+}
+
+form p {
+	margin: 0;
+	text-indent: 0;
+}
+
+form label {
+	display: block;
+	margin-bottom: 0.3rem;
+	font-size: 0.9rem;
+}
+
+fieldset {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 0.5rem 1rem;
+	margin: 0;
+	padding: 0;
+	border-style: none;
+}
+
+fieldset label {
+	margin: 0;
+}
+
+legend {
+	padding: 0;
+	font-size: 0.9rem;
+}
+
+.required {
+	color: #e50000;
+}
+
+form p input,
+form p textarea {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 0.5rem;
+	border-width: 0.1rem;
+	border-style: solid;
+	border-color: #e50000;
+	background-color: #1a1a1a;
+	color: #ffffff;
+	font-family: inherit;
+	font-size: 1rem;
+}
+
+.sent {
+	font-size: 0.9rem;
+}
+
+form > input {
+	justify-self: center;
+	padding: 0.4rem 2rem;
+	border-style: none;
+	border-radius: 0.5rem;
+	background-color: #e50000;
+	color: #ffffff;
+	font-family: "Teko", sans-serif;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+table {
+	width: 90%;
+	max-width: 30rem;
+	margin: 0 auto;
+	border-collapse: collapse;
+	color: #000000;
+}
+
+caption {
+	padding-bottom: 0.5rem;
+	color: #ffffff;
+	font-family: "Teko", sans-serif;
+	font-size: 1.4rem;
+}
+
+th,
+td {
+	padding: 0.4rem 1.5rem;
+	text-align: left;
+}
+
+tr:nth-child(even) {
+	background-color: #cff;
+}
+
+tr:nth-child(odd) {
+	background-color: #fff;
+}
+
+@media (min-width: 769px) {
+	header {
+		padding: 0.5rem 2rem;
+	}
+
+	header nav {
+		display: block;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	main {
+		padding: 2rem 4rem;
+	}
+
+	#hero {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 0 2rem 0;
+	}
+
+	#hero figure {
+		width: 60%;
+		border-style: double;
+	}
+
+	#hero aside {
+		position: static;
+		justify-content: center;
+		gap: 1.5rem;
+		width: 30%;
+	}
+
+	figure.banner {
+		margin: -2rem -4rem 0 -4rem;
+	}
+
+	#intro p {
+		font-size: 1.6rem;
+	}
+
+	article {
+		margin-bottom: 2rem;
+	}
+
+	article p {
+		margin: 0;
+		padding: 1rem 0 0 0;
+	}
+
+	article figure {
+		display: block;
+		width: 30%;
+	}
+
+	.mobile-photo {
+		display: none;
+	}
+
+	.float-right {
+		float: right;
+		margin-left: 2rem;
+	}
+
+	.float-left {
+		float: left;
+		margin-right: 2rem;
+	}
+
+	form {
+		grid-template-columns: 1fr 1fr;
+		gap: 1.5rem 2rem;
+		width: 45%;
+	}
+
+	form > * {
+		grid-column: 1 / -1;
+	}
+
+	form > .half {
+		grid-column: auto;
+	}
+
+	fieldset {
+		display: grid;
+		grid-template-columns: 4rem auto;
+		justify-content: start;
+		gap: 0.5rem;
+	}
+
+	footer {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		justify-items: start;
+		gap: 0.5rem;
+		padding: 0.5rem 2rem;
+	}
+
+	footer p {
+		text-align: left;
+	}
+
+	footer nav {
+		display: block;
+		grid-column: 2;
+		grid-row: 1 / span 2;
+		justify-self: end;
+	}
+}
+
+@media (max-width: 768px) {
+	figcaption {
+		display: none;
+	}
+
+	#open-menu:checked ~ #mobile-menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		display: grid;
+		grid-template-columns: auto auto 1fr;
+		align-content: start;
+		align-items: center;
+		gap: 1rem;
+		box-sizing: border-box;
+		width: 100%;
+		height: 100%;
+		padding: 1rem;
+		overflow: auto;
+		background-color: #000000;
+		color: #ffffff;
+	}
+}

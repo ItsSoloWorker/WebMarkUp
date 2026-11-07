@@ -1,0 +1,5 @@
+Student name: Karo Meloyan
+Student number: 758533
+Student class: 1A
+GitHub Repository: https://github.com/ItsSoloWorker/WebMarkUp
+GitHub Pages URL: https://itssoloworker.github.io/WebMarkUp/
